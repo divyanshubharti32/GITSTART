@@ -26,21 +26,24 @@
       <li class="list-group-item">Item 2</li>
       <li class="list-group-item">Item 3</li>
       <li class="list-group-item">Item 4</li>
+      <li class ="list-group-item"> </li>
     </ul>
    </div>
   </div>
 <script>
-         var items = document.getElementsByClassName('list-group-item');
-         console.log(items);
-         console.log(items[1]);
-         items[1].textContent = 'Hello 2';
+         
+//GETELEMENTSBYTAGNAME //
+
+var li = document.getElementsByTagName('li');
+         console.log(li);
+         console.log(li[1]);
+         li[1].textContent = 'Hello 2';
         // items[1].style.fontWeight = 'bold';
-         items[2].style.backgroundColor= 'green';
+         li[1].style.backgroundColor= 'green';
      //    items.style.backgroundColor='#f4f4f4';   // it wont work beacuse it is a collection
-for(var i=0; i<items.length; i++)
-{
-items[i].style.fontWeight='bold';
-}
+     li[4].innerHTML = "Item 5";
+
+
 </script>
 </body>
 </html>
