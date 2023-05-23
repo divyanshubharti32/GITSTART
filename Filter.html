@@ -26,6 +26,7 @@
     <h2 class="title">Add Items</h2>
     <form id="addForm" class="form-inline mb-3">
       <input type="text" class="form-control mr-2" id="item">
+      <input type="text" class="form-control mr-2" id="item1">
       <input type="submit" class="btn btn-dark" value="Submit">
     </form>
     <h2 class="title">Items</h2>
@@ -63,7 +64,8 @@
   
   //Get input value 
   var newItem = document.getElementById('item').value // Id
-  
+  var newItem1 = document.getElementById('item1').value    // new
+
   //create new li element
   var li = document.createElement('li');
   
@@ -73,6 +75,7 @@
   
   //Add text node with input value
   li.appendChild(document.createTextNode(newItem));
+  li.appendChild(document.createTextNode(newItem1));
   
   
   //create del button element
