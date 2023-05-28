@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>JS For Beginners</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
   </head>
   <body>
       <form onsubmit = "saveToLocalStorage(event)">
@@ -24,7 +24,7 @@
 
 <script>
 
-/* function saveToLocalStorage(event) {
+function saveToLocalStorage(event) {
   event.preventDefault();
   const name = event.target.username.value;
   const email = event.target.emailId.value;
@@ -43,17 +43,7 @@ function showUserOnScreen(obj){
   const parentEle = document.getElementById('listOfItems')
   parentEle.innerHTML = parentEle.innerHTML + `<li> ${obj.name} - ${obj.email} - ${obj.phonenumber} </li>`;
 
-
-  const deleteBbutton = document.createElement('input')
-  deleteButton.type= "button"
-  deleteButton.value='Delete'
-  deleteButton.onClick = () => {
-    localStorage.removeItem(obj.email)
-    parentEle.removeChild(childElem)
-  }
-  childEle.appendChild(deleteButton)
-  parentEle.appendChild(childEle)
-} */
+}
 
     </script>
   </body>
